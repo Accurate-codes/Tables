@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    /* height: 100svh; */
+    width: auto;
+    background-image: url(./austin-distel-wD1LRb9OeEo-unsplash.jpg);
+    background-size: cover;
+}
+
+
+legend {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(129, 74, 16);
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+
+ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(129, 74, 16);
+    padding: 20px;
+}
+
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    /* background-color: transparent; */
+    box-shadow: 100px;
+}
+
+table {
+    border-collapse: collapse;
+    align-items: center;
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.wrapper {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+}
+
+
+a:hover {
+    color: rgb(255, 136, 0);
+}
+
+@media screen and (max-width:510px){
+    body {
+        min-width: 100vw;
+        margin: auto;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .wrapper {
+        width: 80%;
+        max-width: 800%;
+        height: auto;
+        margin: auto;
+    }
+    header {
+        max-width: 100%;
+    }
+}
